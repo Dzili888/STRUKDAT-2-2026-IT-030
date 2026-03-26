@@ -163,11 +163,10 @@ public class Main {
 ![alt text](assets/output.png)
 
 ## 5. Penjelasan Prinsip OOP
-* **Abstraction:** Diterapkan melalui abstract class `Tanaman` karena wujud umum dari sebuah "Tanaman" belum spesifik. Method `cek()` dibuat abstrak (*abstract method*) agar setiap spesies tanaman wajib mendefinisikan cara pengecekan batas amannya sendiri.
-* **Inheritance:** Class `Kaktus` dan `Tulip` bertindak sebagai *subclass* yang mewarisi (*extends*) seluruh atribut (`nama`, `batasMl`, `batasHari`, `alat`) serta method dari *superclass* `Tanaman`.
-* **Polymorphism:** * Terjadi pada *method overriding* untuk fungsi `cek()`. Meskipun nama method yang dipanggil sama, respon dari objek `Kaktus` dan `Tulip` berbeda 180 derajat sesuai dengan karakteristik biologis mereka masing-masing. 
-  * Terjadi juga *dynamic method dispatch* pada interface `Alat` yang diisi dengan instansiasi dari class `Sistemnyiram`.
-* **Encapsulation:** Penggunaan modifier `protected` pada atribut di dalam class `Tanaman` berfungsi untuk menjaga agar data hanya bisa diakses dan dimodifikasi secara internal oleh class itu sendiri dan pewaris kelasnya (*subclass*).
+* **Abstraction:** Kita pakai `abstract class Tanaman` karena konsep "Tanaman" itu kan masih umum banget. Nah, di dalamnya ada method `cek()` yang sengaja dibikin abstrak. Kenapa? Karena tiap spesies tanaman pasti punya cara dan takaran yang beda-beda buat ngecek aman atau nggaknya pas disiram.
+* **Inheritance:** Ini kelihatan banget di class `Kaktus` dan `Tulip`. Daripada capek nulis ulang variabel dari nol, kedua class ini tinggal mewarisi (*extends*) semua sifat dasar—kayak `nama`, `batasMl`, dan `batasHari` dari class induknya, yaitu `Tanaman`.
+* **Polymorphism:** Ini bagian yang paling kerasa logikanya. Kita pakai *method overriding* buat fungsi `cek()`. Nama fungsinya sama-sama `cek()`, tapi pas dieksekusi, Kaktus bakal bereaksi kalau kelebihan air, sedangkan Tulip bakal bereaksi kalau kekurangan air. Responnya beda tergantung jenis tanamannya.
+* **Encapsulation:** variabel di dalam class `Tanaman` sengaja dikasih *modifier* `protected`. Jadi, data-data ini cuma bisa diakses dan diolah sama class itu sendiri dan `child` kelasnya.
 
 ## 6. Keunikan Program
 
