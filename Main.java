@@ -1,6 +1,5 @@
 public class Main {
 
-    // Method reusable tanpa input user
     public static void setupTanaman(Tanaman tanaman, int ml, int hari) {
         System.out.println("setting buat " + tanaman.nama + "...");
 
@@ -18,14 +17,9 @@ public class Main {
         Tanaman kaktus = new Kaktus("Kaktus Gurun", mesin);
         Tanaman tulip = new Tulip("Tulip Belanda", mesin);
 
-        System.out.println("=== SETUP ALAT SIRAM OTOMATIS ===\n");
-
-        // HARD CODED VALUE
-        setupTanaman(kaktus, 40, 7);   // contoh: salah (biar keliatan validasi)
+        setupTanaman(kaktus, 40, 7);   // contoh yg salah 
         System.out.println("\n-----------------------------\n");
 
-        setupTanaman(tulip, 300, 8);  // contoh: benar
-
-        System.out.println("\n=== SELESAI ===");
+        setupTanaman(tulip, 300, 8);  // contoh yg benar
     }
 }
