@@ -160,9 +160,7 @@ public class Main {
 ```
 
 ## 4. Screenshot Output
-![Screenshot Output Terminal](output.png)
-
-*(Catatan: Pastikan file gambar screenshot terminal bernama `output.png` dan sudah berada di dalam folder yang sama dengan file README.md ini)*
+![alt text](assets/output.png)
 
 ## 5. Penjelasan Prinsip OOP
 * **Abstraction:** Diterapkan melalui abstract class `Tanaman` karena wujud umum dari sebuah "Tanaman" belum spesifik. Method `cek()` dibuat abstrak (*abstract method*) agar setiap spesies tanaman wajib mendefinisikan cara pengecekan batas amannya sendiri.
@@ -172,6 +170,5 @@ public class Main {
 * **Encapsulation:** Penggunaan modifier `protected` pada atribut di dalam class `Tanaman` berfungsi untuk menjaga agar data hanya bisa diakses dan dimodifikasi secara internal oleh class itu sendiri dan pewaris kelasnya (*subclass*).
 
 ## 6. Keunikan Program
-Berbeda dengan studi kasus OOP pada umumnya yang sering berfokus pada sistem transaksional (seperti kasir, minimarket, atau sistem akademik), program ini mengadopsi logika biologi botani dan IoT (*smart home garden*). 
 
-Keunikan utamanya terletak pada pembalikan kondisi logika (`if-else`) secara dinamis antar objek. Selain itu, implementasi **Static Method** `setupTanaman()` di dalam *Main class* memisahkan alur eksekusi dengan sangat rapi. Pendekatan ini memungkinkan sistem untuk menangani dan memvalidasi berbagai macam objek tanaman secara fleksibel melalui satu pintu blok fungsi, tanpa perlu repot menulis ulang percabangan kode untuk setiap tanaman baru.
+Keunikannya ada di implementasi **Static Method** `setupTanaman()` di dalam *Main class* memisahkan alur eksekusi dengan sangat rapi. Ini memungkinkan sistem untuk menangani dan memvalidasi berbagai macam objek tanaman secara fleksibel melalui satu pintu blok fungsi, tanpa perlu repot menulis ulang percabangan kode untuk setiap tanaman baru.
